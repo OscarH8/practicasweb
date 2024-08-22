@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+    <TITLE>División con JavaScript</TITLE>
+</HEAD>
+<BODY>
+     <input type="number" id="num1" placeholder="Ingrese el dividendo">
+     <input type="number" id="num2" placeholder="Ingrese el divisor">
+     
+     <button onclick="dividir()">Dividir</button>
+     <P id="resultado"></P>
+     
+     <script>
+         function dividir() {
+              // Obtener los valores de los campos de entrada
+              let num1 = parseFloat(document.getElementById('num1').value);
+              let num2 = parseFloat(document.getElementById('num2').value);
+              
+              
+              
+              //Validar si el divisor es cero
+              if (num2 === 0) {
+              document.getElementById('resultado').textContent = "No se puede dividir entre cero.";
+              } else {
+              
+              //Realizar la divición
+              let resultado = num1 / num2;
+              document.getElementById('resultado').textContent = "El resultado es " + resultado;
+          }
+          }
+     </script>
+     
+     
+     
+     
+     
+     
+ </BODY>
+ </HTML>
+ 
