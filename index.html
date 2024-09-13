@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie_edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica final</title>
+          <script>
+        function redirigir() {
+            // Obtiene el valor de la opciÃ³n seleccionada en el menÃº desplegable
+            var seleccion = document.getElementById("menu").value;
+            
+            // Si la opciÃ³n seleccionada no estÃ¡ vacÃ­a, redirige a esa URL
+            if (seleccion) {
+                window.location.href = seleccion;
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh; /* la p⨩na ocupa toda la altura de la ventana */
+        }
+        .sidebar {
+            width: 25%; /* ancho de las secciones laterales */
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .main-content {
+            flex-grow: 1; /* la secci󮠣entral ocupa el resto del espacio */
+            padding: 40px;
+            background-color: #3da915;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            width: 100%;
+            max-width: 400px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar" style="background-color: #04b1e8;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="1.jpg" width=400 height=400 align=center>
+        </div>
+
+
+        <!-- Contenido central -->
+        <div class="main-content">
+            <form onsubmit="event.preventDefault(); redirigir();">
+        <label for="menu">Elige una Practica:</label>
+        <select id="menu">
+            <option value="">-- Selecciona una practica --</option>
+            <option value="practica 1.html">Division</option>
+            <option value="practica 2.html">Formulario</option>
+            <option value="practica 3.html">Body</option>
+            <option value="practica 4.html">Himno Nacional</option>
+            <option value="practica 5.html">Celdas</option>
+        </select>
+        <br><br>
+
+        <!-- BotÃ³n de enviar -->
+        <button type="submit">Enviar</button>
+    </form>
+        </div>
+
+
+        <div class="sidebar" style="background-color: #04b1e8;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="2.jpg" width=400 height=400>
+        </div>
+    </div>
+
+</body>
+</html>
