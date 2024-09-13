@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-    <TITLE>División con JavaScript</TITLE>
+    <TITLE>DivisiÃ³n con JavaScript</TITLE>
 </HEAD>
 <BODY>
      <input type="number" id="num1" placeholder="Ingrese el dividendo">
@@ -22,7 +22,7 @@
               document.getElementById('resultado').textContent = "No se puede dividir entre cero.";
               } else {
               
-              //Realizar la divición
+              //Realizar la diviciÃ³n
               let resultado = num1 / num2;
               document.getElementById('resultado').textContent = "El resultado es " + resultado;
           }
